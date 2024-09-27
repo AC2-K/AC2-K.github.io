@@ -1,3 +1,9 @@
 title: "自己紹介サイト"
 description: "私の自己紹介ページ"
-remote-theme: minimal
+theme: minima
+markdown: kramdown
+
+# ナビゲーションメニューの設定
+collections:
+  pages:
+    output: true
