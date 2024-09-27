@@ -3,17 +3,24 @@ layout: default
 title: "自己紹介"
 ---
 
-# こんにちは、[あなたの名前]です！
+# Profile
 
-私は[職業や趣味]をしています。ここでは、私の経歴やスキルについて紹介します。
+こんにちは。ac2000です! 競技プログラミングをしています！
 
-## スキル
-- プログラミング: Python, JavaScript
-- ウェブデザイン: HTML, CSS
-- その他: Git, GitHub
+# Links
 
-## 経歴
-私は、[経歴]です。これまで、さまざまなプロジェクトに取り組んできました。
+- X: [@ac2000_cp](https://x.com/ac2000_cp)
 
-## 趣味
-趣味は[趣味を記載]です。
+-  AtCoder: [AC2K](https://atcoder.jp/users/AC2K)
+
+- Codeforces: [AC2K](https://codeforces.com/profile/AC2K)
+
+- yukicoder: [AC2K](https://yukicoder.me/users/17347)
+
+- ScrapBox: [競プロメモ](http://scrapbox.io/ac2000-kyopro)
+
+- HackMD: [@ac2000](https://hackmd.io/@ac2000)
+
+- GitHub: [AC2-K](http://github.com/AC2-K)
+
+- Library: [Library](https://ac2-k.github.io/Library/)
