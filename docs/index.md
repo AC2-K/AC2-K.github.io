@@ -1,8 +1,3 @@
----
-layout: default
-title: "自己紹介"
----
-
 # Profile
 
 こんにちは。ac2000です! 競技プログラミングをしています！
