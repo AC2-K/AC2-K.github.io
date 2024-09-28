@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+*{
+  margin: 5px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+header {
+  background-color:dodgerblue;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.header__flex {
+  display: flex;
+  height:60px;
+  align-items: center;
+}
+
+.header__flex a{
+  color: hsl(0, 0%, 94%);
+  text-decoration-line: none;
+}
+
+.header__flex nav {
+  margin-left: auto;
+}
+
+.header__flex ul {
+  display: flex;
+}
+
+.header__flex ul li {
+  margin-left: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color:dodgerblue;
+  text-align: center;
+  bottom: dodgerblue;
+}
+
+section {
+  margin-bottom: 20px;
+}
