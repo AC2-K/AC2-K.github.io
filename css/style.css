@@ -56,7 +56,7 @@ body {
 
 
 footer{
-  position: fixed;
+  position: sticky;
   align-items: flex;
   bottom: 0px;
   width: 100%;
