@@ -9,10 +9,9 @@ import "highlight.js/styles/github-dark.css";
 
 export default function RenderMarkDown({ path }) {
     const [content, setContent] = useState("");
-    console.log("12");
 
     useEffect(() => {
-        fetch(`${path}`)
+        import(`${path}`)
             .then((response) => response.text())
             .then((text) => {
                 const ret = text.replace(/\-{3,}([\s\S]+)\-{3,}/, "", 1);
@@ -22,8 +21,6 @@ export default function RenderMarkDown({ path }) {
             .then((text) => setContent(text))
             .catch(() => setContent("# 記事が見つかりませんでした"));
     }, [path]);
-
-    console.log("24");
 
 
     return <div className="container m-auto">
