@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import RenderMarkDown from "/src/components/RenderMarkdown";
+import RenderMarkDown from "../src/components/RenderMarkdown";
 
 export default function BlogPost() {
     const { id } = useParams();

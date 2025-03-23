@@ -1,11 +1,11 @@
 import './styles/App.css';
 import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
-import Header from '/src/components/layout/Header';
-import Footer from '/src/components/layout/Footer';
-import Home from '/src/routes/Home';
+import Header from '../src/components/layout/Header';
+import Footer from '../src/components/layout/Footer';
+import Home from '../src/routes/Home';
 import React from 'react';
-import BlogsList from '/src/routes/PostsList';
-import Post from '/src/components/post/Post';
+import BlogsList from '../src/routes/PostsList';
+import Post from '../src/components/post/Post';
 
 export default function App() {
   return (
