@@ -1,8 +1,16 @@
-import React from "react";
-import posts from "../../public/posts.json"
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function BlogList() {
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        fetch("/posts.json")
+            .then(response => response.json())
+            .then(data => setPosts(data))
+            .catch(error => console.error("Error loading posts:", error));
+    }, []);
+
 
     return <div content="BlogsList">
         <h1>記事一覧</h1>
