@@ -9,6 +9,7 @@ import "highlight.js/styles/github-dark.css";
 
 export default function RenderMarkDown({ path }) {
     const [content, setContent] = useState("");
+    console.log("OK");
 
     useEffect(() => {
         fetch(`${path}`)
@@ -20,6 +21,7 @@ export default function RenderMarkDown({ path }) {
             .then((text) => setContent(text))
             .catch(() => setContent("# 記事が見つかりませんでした"));
     }, [path]);
+    console.log("OK");
 
 
     return <div className="container m-auto">

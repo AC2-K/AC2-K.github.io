@@ -5,7 +5,6 @@ import re
 
 POSTS_DIR = "../public/markdown/posts"
 OUTPUT_FILE = "../public/posts.json"
-POSTS_DIR = "../public/markdown/posts"
 
 if not os.path.exists(POSTS_DIR):
     os.makedirs(POSTS_DIR)
