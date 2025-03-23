@@ -21,14 +21,19 @@ export default function RenderMarkDown({ path }) {
             .then((text) => setContent(text))
             .catch(() => setContent("# 記事が見つかりませんでした"));
     }, [path]);
+
     console.log("24");
 
 
-    return <div className="container m-auto">
-        <ReactMarkdown
-            children={content}
-            remarkPlugins={[remarkMath]}
-            rehypePlugins={[rehypeKatex, rehypeHighlight]}
-        />
-    </div>;
+    try {
+        return <div className="container m-auto">
+            <ReactMarkdown
+                children={content}
+                remarkPlugins={[remarkMath]}
+                rehypePlugins={[rehypeKatex, rehypeHighlight]}
+            />
+        </div>
+    } catch {
+        console.assert("37");
+    }
 };
