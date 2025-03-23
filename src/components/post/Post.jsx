@@ -6,6 +6,6 @@ export default function BlogPost() {
     const { id } = useParams();
 
     return (
-        <RenderMarkDown path={`pulic/markdown/posts/${id}.md`} />
+        <RenderMarkDown path={`/pulic/markdown/posts/${id}.md`} />
     );
 };
