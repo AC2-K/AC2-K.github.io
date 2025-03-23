@@ -7,7 +7,7 @@ import rehypeHighlight from "rehype-highlight";
 import "katex/dist/katex.min.css";
 import "highlight.js/styles/github-dark.css";
 
-export default function RenderMarkDown({path}) {
+export default function RenderMarkDown({ path }) {
     const [content, setContent] = useState("");
 
     useEffect(() => {
@@ -20,6 +20,7 @@ export default function RenderMarkDown({path}) {
             .then((text) => setContent(text))
             .catch(() => setContent("# 記事が見つかりませんでした"));
     }, [path]);
+
 
     return <div className="container m-auto">
         <ReactMarkdown

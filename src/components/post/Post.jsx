@@ -4,7 +4,6 @@ import RenderMarkDown from "../RenderMarkdown";
 
 export default function BlogPost() {
     const { id } = useParams();
-    console.log(id);
 
     return (
         <RenderMarkDown path={`../../../pulic/markdown/posts/${id}.md`} />
