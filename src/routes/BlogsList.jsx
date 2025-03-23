@@ -2,7 +2,7 @@ import React from "react";
 import posts from "/public/posts"
 import { Link } from "react-router-dom";
 
-const BlogList = () => {
+export default function BlogList ()  {
     return <div content="BlogsList">
         <h1>記事一覧</h1>
         <div class="row row-cols-1 row-cols-md-2">
@@ -25,6 +25,3 @@ const BlogList = () => {
         </div>
     </div>;
 }
-
-
-export default BlogList;

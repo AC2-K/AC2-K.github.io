@@ -7,7 +7,7 @@ import React from 'react';
 import BlogsList from '/src/routes/BlogsList';
 import Post from '/src/components/blog/Post';
 
-const App = () => {
+export default function App() {
   return (
     <body>
       <BrowserRouter>
@@ -27,5 +27,3 @@ const App = () => {
     </body>
   );
 }
-
-export default App;

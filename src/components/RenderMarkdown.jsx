@@ -7,7 +7,7 @@ import rehypeHighlight from "rehype-highlight";
 import "katex/dist/katex.min.css";
 import "highlight.js/styles/github-dark.css";
 
-const RenderMarkDown = ({path}) => {
+export default function RenderMarkDown({path}) {
     const [content, setContent] = useState("");
 
     useEffect(() => {
@@ -32,5 +32,3 @@ const RenderMarkDown = ({path}) => {
         />
     </div>;
 };
-
-export default RenderMarkDown;
