@@ -3,7 +3,7 @@ import RenderMarkDown from "../components/RenderMarkdown";
 import "../styles/Home.css"
 
 export default function Home() {
-    console.log("OK");
+    console.log("6");
     return <div className="Home">
         <RenderMarkDown path={"../../public/markdown/profile.md"} />
     </div>;
