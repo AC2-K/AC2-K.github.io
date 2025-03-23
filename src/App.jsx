@@ -9,7 +9,7 @@ import PostsList from '../src/routes/PostsList';
 
 export default function App() {
   return (
-    <div class="App">
+    <body>
       <HashRouter>
         <Header />
         <div class="content">
@@ -24,6 +24,6 @@ export default function App() {
         </div>
         <Footer />
       </HashRouter>
-    </div>
+    </body>
   );
 }
