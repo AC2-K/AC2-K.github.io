@@ -11,6 +11,8 @@ export default function BlogList() {
             .catch(error => console.error("Error loading posts:", error));
     }, []);
 
+    console.log(posts);
+
 
     return <div content="BlogsList">
         <h1>記事一覧</h1>
