@@ -11,7 +11,7 @@ export default function PostsList() {
             .then(data => setPosts(data))
             .catch(error => console.error("Error loading posts:", error));
     }, []);
-    
+
     console.log("2");
 
 
@@ -19,8 +19,8 @@ export default function PostsList() {
         <h1>記事一覧</h1>
         <div class="row row-cols-1 row-cols-md-2">
             {
-                    posts.map(
-                        (post) => {
+                posts.map(
+                    (post) => {
                             return <div class="col">
                                 <div class="card">
                                     <div class="card-body "><div class="card-title fs-5">{post.title}</div>
