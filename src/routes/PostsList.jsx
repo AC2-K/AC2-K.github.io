@@ -1,5 +1,5 @@
 import React from "react";
-import posts from "../public/posts.json"
+import posts from "../../public/posts.json"
 import { Link } from "react-router-dom";
 
 export default function BlogList ()  {
