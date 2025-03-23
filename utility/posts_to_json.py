@@ -5,6 +5,11 @@ import re
 
 POSTS_DIR = "../public/markdown/posts"
 OUTPUT_FILE = "../public/posts.json"
+POSTS_DIR = "../public/markdown/posts"
+
+if not os.path.exists(POSTS_DIR):
+    os.makedirs(POSTS_DIR)
+
 
 def parse_markdown_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
