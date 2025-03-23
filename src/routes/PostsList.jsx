@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function BlogList() {
+export default function PostsList() {
     const [posts, setPosts] = useState([]);
+    console.log("1");
 
     useEffect(() => {
-        fetch("/posts.json")
+        fetch("posts.json")
             .then(response => response.json())
             .then(data => setPosts(data))
             .catch(error => console.error("Error loading posts:", error));
     }, []);
-
-    console.log(posts);
+    
+    console.log("2");
 
 
     return <div content="BlogsList">
