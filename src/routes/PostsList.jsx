@@ -7,7 +7,7 @@ export default function BlogList() {
         return <div content="BlogsList">
             <h1>記事一覧</h1>
             <div class="row row-cols-1 row-cols-md-2">
-                {
+                {/* {
                     posts.map(
                         (post) => {
                             return <div class="col">
@@ -22,7 +22,7 @@ export default function BlogList() {
                             </div>
                         }
                     )
-                }
+                } */}
             </div>
         </div>;
     } catch {
