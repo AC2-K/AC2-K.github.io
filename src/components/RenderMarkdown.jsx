@@ -16,6 +16,7 @@ export default function RenderMarkDown({ path }) {
             .then((response) => response.text())
             .then((text) => {
                 const ret = text.replace(/\-{3,}([\s\S]+)\-{3,}/, "", 1);
+                console.log(ret);
                 return ret;
             })
             .then((text) => setContent(text))
@@ -25,15 +26,11 @@ export default function RenderMarkDown({ path }) {
     console.log("24");
 
 
-    try {
-        return <div className="container m-auto">
-            <ReactMarkdown
-                children={content}
-                remarkPlugins={[remarkMath]}
-                rehypePlugins={[rehypeKatex, rehypeHighlight]}
-            />
-        </div>
-    } catch {
-        console.assert("37");
-    }
+    return <div className="container m-auto">
+        <ReactMarkdown
+            children={content}
+            remarkPlugins={[remarkMath]}
+            rehypePlugins={[rehypeKatex, rehypeHighlight]}
+        />
+    </div>
 };
