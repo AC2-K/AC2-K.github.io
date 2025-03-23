@@ -7,6 +7,6 @@ export default function BlogPost() {
     console.log(id);
 
     return (
-        <RenderMarkDown path={`/markdown/posts/${id}.md`} />
+        <RenderMarkDown path={`../../../pulic/markdown/posts/${id}.md`} />
     );
 };

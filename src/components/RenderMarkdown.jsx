@@ -14,10 +14,7 @@ export default function RenderMarkDown({path}) {
         fetch(`${path}`)
             .then((response) => response.text())
             .then((text) => {
-                // FrontMatter を取り除く
-                console.log(text);
                 const ret = text.replace(/\-{3,}([\s\S]+)\-{3,}/, "", 1);
-                console.log(ret);
                 return ret;
             })
             .then((text) => setContent(text))
