@@ -25,8 +25,7 @@ export default function BlogList() {
                 }
             </div>
         </div>;
-    }
-    catch {
+    } catch {
         console.assert("HERE");
     }
 }

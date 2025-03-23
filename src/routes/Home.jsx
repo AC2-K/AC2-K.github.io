@@ -4,7 +4,7 @@ import "../styles/Home.css"
 
 export default function Home() {
     return <div className="Home">
-        <RenderMarkDown path={"/markdown/profile.md"} />
+        <RenderMarkDown path={"../../public/markdown/profile.md"} />
     </div>;
 
 }
