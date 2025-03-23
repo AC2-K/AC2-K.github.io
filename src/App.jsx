@@ -4,8 +4,8 @@ import Header from '/src/components/layout/Header';
 import Footer from '/src/components/layout/Footer';
 import Home from '/src/routes/Home';
 import React from 'react';
-import BlogsList from '/src/routes/BlogsList';
-import Post from '/src/components/blog/Post';
+import BlogsList from '/src/routes/PostsList';
+import Post from '/src/components/post/Post';
 
 export default function App() {
   return (
