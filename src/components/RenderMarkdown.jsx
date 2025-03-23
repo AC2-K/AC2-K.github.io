@@ -9,13 +9,14 @@ import "highlight.js/styles/github-dark.css";
 
 export default function RenderMarkDown({ path }) {
     const [content, setContent] = useState("");
+    
+    console.log(path);
 
     useEffect(() => {
-        import(`${path}`)
+        fetch(`${path}`)
             .then((response) => response.text())
             .then((text) => {
                 const ret = text.replace(/\-{3,}([\s\S]+)\-{3,}/, "", 1);
-                console.log(ret);
                 return ret;
             })
             .then((text) => setContent(text))
