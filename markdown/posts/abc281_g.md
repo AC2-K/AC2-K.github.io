@@ -1,7 +1,7 @@
 ---
 
-title: G - Farthest City
-date: 2025-03-25
+title: "G - Farthest City"
+date: "2025-03-25"
 
 ---
 
