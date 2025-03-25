@@ -3,11 +3,11 @@ import json
 import frontmatter
 import re
 
-POSTS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../markdown/posts"))
-OUTPUT_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "../markdown/posts.json"))
+POSTS_DIR = "../public/markdown/posts"
+OUTPUT_FILE = "../public/posts.json"
 
 if not os.path.exists(POSTS_DIR):
-    os.makedirs(POSTS_DIR, exist_ok = True)
+    os.makedirs(POSTS_DIR)
 
 
 def parse_markdown_file(filepath):
@@ -22,7 +22,7 @@ def parse_markdown_file(filepath):
     }
 
 def posts_to_json():
-    if not os.path.exists(os.path.join(POSTS_DIR)):
+    if not os.path.exists(os.path.join(POSTS_DIR,)):
         print(f"{POSTS_DIR} cannot be found...")
         return
 
