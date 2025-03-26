@@ -3,8 +3,8 @@ import json
 import frontmatter
 import re
 
-POSTS_DIR = "../public/markdown/posts"
-OUTPUT_FILE = "../public/posts.json"
+POSTS_DIR = "/home/ykota0619/mypage/public/markdown/posts"
+OUTPUT_FILE = "/home/ykota0619/mypage/public/posts.json"
 
 if not os.path.exists(POSTS_DIR):
     os.makedirs(POSTS_DIR)

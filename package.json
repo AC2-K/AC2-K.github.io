@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "generate:posts": "python3 utility/posts_to_json.py",
-    "dev": "npm run generate:posts && vite",
-    "build": "npm run generate:posts && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
